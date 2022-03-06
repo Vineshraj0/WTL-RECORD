@@ -1,0 +1,202 @@
+<!DOCTYPE>
+<html >
+<head>
+<title>Resume</title>
+<link rel="stylesheet" href="resumestyle.css">
+</head>
+<body>
+<center>
+<div class="form">
+  <h2></h2>
+  <div class="grid">
+    <div class="form-element">
+      <input type="file" id="file-1" accept="image/*">
+      <label for="file-1" id="file-1-preview">
+        <img src="https://bit.ly/3ubuq5o" alt="">
+        <div>          
+          <script>
+            function previewBeforeUpload(id){
+  document.querySelector("#"+id).addEventListener("change",function(e){
+    if(e.target.files.length == 0){
+      return;
+    }
+    let file = e.target.files[0];
+    let url = URL.createObjectURL(file);
+    //document.querySelector("#"+id+"-preview div").innerText = file.name;
+    document.querySelector("#"+id+"-preview img").src = url;
+  });
+}
+
+previewBeforeUpload("file-1");
+          </script>
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+</center>
+
+<table>
+  <table width="850" border="0" align="center">
+  <tr>
+    <td><table width="850" border="0" class="bor">
+      <tr>
+        <td height="60" colspan="2"><div align="center"><strong><center><input type="text" value="Enter your name" id="i1"></center></strong>
+  </div></td>
+      </tr>
+      <tr>
+        <td>Email ID: <input type="text" value="Enter your mail id"></td>
+        <td><div align="right">Contact: <input type="text" value="Enter Phone number"></div></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><strong>CAREER OBJECTIVE</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-indent:30px;">
+          <textarea type="text" rows="4" cols="170">
+</textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><strong>EDUCATIONAL PROFILE</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2"><table width="850" border="1" bordercolor="#000000">
+          <tr>
+            <td><div align="center"><strong>Course</strong></div></td>
+            <td><div align="center"><strong>Board/University</strong></div></td>
+            <td><div align="center"><strong>Educational Institutation</strong></div></td>
+            <td><div align="center"><strong>Year of pass</strong></div></td>
+            <td><p align="center"><strong>% of Marks</strong></p></td>
+          </tr>
+          <tr>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><div align="left"><input type="text" >
+             </div></td>
+            <td><div align="center"><input type="text" ></div></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><div align="left"><input type="text" ></div></td>
+            <td><div align="center"><input type="text" ></div></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><div align="left"><input type="text" ></div></td>
+            <td><div align="center"><input type="text" ></div></td>
+            <td><input type="text" ></td>
+          </tr>
+          <tr>
+            <td><input type="text" ></td>
+            <td><input type="text" ></td>
+            <td><div align="left"><input type="text" ></div></td>
+            <td><div align="center"><input type="text" ></div></td>
+            <td><input type="text" ></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><strong>TECHNICAL SKILLS</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2"><table width="831" border="0" align="center">
+          <tr>
+            <ul>
+            <td width="264"><li>Operating System</li></td>
+            <td width="37"><strong>:</strong></td>
+            <td width="532"><input type="text" ></td>
+            </ul>
+          </tr>
+          <tr>
+          <ul>
+            <td><li>Programming Languages</li></td>
+            <td><strong>:</strong></td>
+            <td><input type="text" ></td>
+            </ul>
+          </tr>
+          <tr>
+          <ul>
+            <td><li>Frameworks</li></td>
+            <td><strong>:</strong></td>
+            <td><input type="text" ></td>
+           </ul>
+          </tr>
+          <tr>
+          <ul>
+            <td><li>Database</li></td>
+            <td><strong>:</strong></td>
+            <td><input type="text" ></td>
+            </ul>
+          </tr>
+          <tr>
+          <ul>
+            <td><li>IDE</li></td>
+            <td><strong>:</strong></td>
+            <td><input type="text" ></td>
+            </ul>
+          </tr>
+        </table></td>
+      </tr>
+    <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><strong>PROJECT EXPERIENCE</strong></td>
+      </tr>
+      <tr>
+        <td height="17" colspan="2" bgcolor="#FFFFFF"><table width="829" border="0" 
+         align="center">
+          
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Done Internship in <input type="text" ></td>
+          </tr>
+          <tr>
+            <td><table width="585">
+              <tr>
+                <td width="120">Project Title</td>
+                <td width="15">:</td>
+                <td width="434"><strong><input type="text" ></strong>
+                 </td>
+              </tr>
+              <tr>
+                <td>Team Size</td>
+                <td>:</td>
+                <td><input type="text" ></td>
+              </tr>
+              <tr>
+                <td>Position</td>
+                <td>:</td>
+                <td> <input type="text" ></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="17" colspan="2" bgcolor="#FFFFFF"></td>
+      </tr>
+
+
+      <tr>
+        <td colspan="2" bgcolor="#CCCCCC"><strong>ACHIEVEMENTS</strong></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-indent:30px;" >
+          <textarea type="text" rows="4" cols="170">
+</textarea>
+        </td>
+      </tr>
+      <tr>
+        <td height="17" colspan="2" bgcolor="#FFFFFF"><div align="center"><strong><br><br>
+         <button type="button" onclick="window.print()">PRINT</button></div></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
